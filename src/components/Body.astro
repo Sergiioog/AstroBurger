@@ -1,0 +1,36 @@
+---
+import CardVideo from "./CardVideo";
+import Titulo from "./Titulo.astro";
+import Footer from "./Footer.astro";
+---
+
+
+<section>
+    <Titulo title="ASTROBURGER"  />
+    <section class="w-full h-auto flex justify-center items-center flex-col mt-40">
+        <h2 class="text-4xl text-white">NUESTROS PRODUCTOS</h2>
+        <div class="mt-28 w-auto h-full grid grid-cols-2 ">
+            <a href="/productos"> 
+                <CardVideo titulo="Entrantes" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            </a>
+            <a href="/productos"> 
+                <CardVideo titulo="Burger de Carne" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            </a>
+            <a href="/productos"> 
+                <CardVideo titulo="Bebidas" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            </a>
+            <a href="/productos"> 
+                <CardVideo titulo="Postres" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            </a>
+        <div>
+    </section>
+    <Footer />
+</section>
+
+<style>
+    h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        text-shadow: 2px 2px 2px black;
+        
+    }
+</style>

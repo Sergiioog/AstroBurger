@@ -1,0 +1,62 @@
+---
+
+
+interface Props {
+    title:string;
+    descripcion:any;
+    imagen:string;
+
+}
+const {title,descripcion,imagen} = Astro.props;
+---
+
+<section class="h-auto w-full flex justify-center mt-14 items-center">
+    <div id="seccionTexto" class="w-[40%] h-autoflex justify-center flex-col p-5 mt-10">
+        <h1 class=" h-auto w-auto flex justify-center
+        text-4xl">{title}</h1>
+        <p class="p-5 text-justify mt-5 mb-3"> 
+           {descripcion}
+        </p>
+        <div class="h-10 flex justify-center items-center">
+            <a href="#seccionProductos" class="border-r-2 h-auto w-auto bg-red-500 px-4 py-2 text-white hover:bg-red-600">SABER MÁS</a>
+        </div>
+        
+    </div>
+    <div class="w-[40%] h-[50vh] ml-14">
+        <img src={imagen} alt="imagen burger">
+    </div>
+    
+</section>
+
+
+<style>
+    @font-face {
+        font-family: 'merienda';
+        src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
+    }
+
+    #seccionTexto h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
+
+    #seccionTexto p, button {
+        color: #fff; /* Texto blanco */
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
+    img {
+        max-height: 100%;
+    }
+    a {
+        border-radius: 10px;
+        background: #f8f6f6;
+        box-shadow: 0 0 7px #ffffff;
+        letter-spacing: -1.5px;
+        color: #292828;
+        text-shadow: 0 0 0.3px black;
+    }
+</style>

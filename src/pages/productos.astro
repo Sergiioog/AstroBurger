@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Descripcion from "../components/Descripcion.astro";
+import Secciones from "../components/Secciones.astro";
+import Footer from "../components/Footer.astro";
+---
+
+
+<Layout title="Nuestros productos">
+    <Header />
+    <Descripcion 
+        title="NUESTRAS BURGERS"
+        imagen="assets/photos/hamburguesas/burger5.png"
+        descripcion={`
+            En AstroBurger nos especializamos en realizar hamburguesas smashed, 
+            una técnica que consiste en prensar la carne en la parrilla para lograr una textura crujiente por fuera y jugosa por dentro. 
+            Utilizamos ingredientes frescos y de alta calidad, combinando sabores únicos para ofrecerte una experiencia gastronómica inigualable. 
+            ¡Descubre el auténtico sabor de nuestras hamburguesas en cada bocado!
+        `}
+    />
+    <section id="seccionProductos" class="h-auto w-full mt-[35vh] mb-[20vh] flex justify-center flex-col ">
+        <h2 class="text-3xl">¿QUÉ VAS A ELEGIR?</h2>
+        <Secciones />
+    </section>
+    <Footer />
+</Layout>
+
+<style>
+    @font-face {
+        font-family: 'merienda';
+        src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
+    }
+
+    #seccionTexto h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
+
+    #seccionTexto p, button {
+        color: #fff; /* Texto blanco */
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
+    img {
+        max-height: 100%;
+    }
+</style>
+
+

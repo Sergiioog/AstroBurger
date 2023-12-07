@@ -1,0 +1,46 @@
+---
+
+interface Props {
+    title:string;
+    descripcion:any;
+    imagen:string;
+
+}
+const {title,descripcion,imagen} = Astro.props;
+---
+
+<section class="h-auto w-full flex justify-center mt-14 items-center max-w-full m-auto">
+    <div class=" h-[50vh] mr-12">
+        <img src={imagen} alt="imagen burger">
+    </div>
+    <div id="seccionTexto" class="w-[40%] h-autoflex justify-center flex-col p-5 mt-10 ml-12">
+        <h1 class=" h-auto w-auto flex justify-center
+        text-4xl">{title}</h1>
+        <p class="p-5 text-justify mt-5 mb-3"> 
+           {descripcion}
+        </p>
+    </div>
+</section>
+
+
+<style>
+  
+
+    #seccionTexto h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
+
+    #seccionTexto p, button {
+        color: #fff; /* Texto blanco */
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
+    img {
+        max-height: 100%;
+    }
+   
+</style>
