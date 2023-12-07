@@ -1,0 +1,13 @@
+---
+import Layout from "./Layout.astro";
+const {frontmatter} = Astro.props;
+const {title,description} = frontmatter;
+---
+
+<Layout title="Terminos y condiciones">
+    {title}
+    {description}
+    <div>
+        <slot />
+    </div>
+</Layout>
