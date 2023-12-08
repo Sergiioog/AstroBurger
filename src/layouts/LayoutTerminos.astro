@@ -4,10 +4,8 @@ const {frontmatter} = Astro.props;
 const {title,description} = frontmatter;
 ---
 
-<Layout title="Terminos y condiciones">
-    {title}
-    {description}
-    <div>
-        <slot />
+<Layout title={title}>
+    <div class="bg-white w-3/4 h-20 m-auto mt-14">
+        <p>Hola</p>
     </div>
 </Layout>
