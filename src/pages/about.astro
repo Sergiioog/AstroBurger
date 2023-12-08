@@ -34,15 +34,17 @@ import Footer from "../components/Footer.astro";
     </section>
     <section class="h-auto w-full mt-32">
         <h3 class="text-4xl" >¿POR QUÉ ASTROBURGER?</h3>
-        <div class=" rounded-xl w-3/4 m-auto mt-10 flex justify-around items-center gap-14 p-5">
-
-            <CardAbout/>
-            <CardAbout/>
-            <CardAbout/>
-            <CardAbout/>
+        <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />    
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
         </div>
     </section>
-
     <Footer />
 </Layout>
 
@@ -53,7 +55,6 @@ import Footer from "../components/Footer.astro";
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
         letter-spacing: -2px;
         text-align: center;
-
     }
 
   
