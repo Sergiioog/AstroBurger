@@ -1,11 +1,109 @@
 ---
 import Layout from "./Layout.astro";
+import Header from "../components/Header.astro";
 const {frontmatter} = Astro.props;
-const {title,description} = frontmatter;
+const {title,author,image} = frontmatter;
 ---
-
 <Layout title={title}>
-    <div class="bg-white w-3/4 h-20 m-auto mt-14">
-        <p>Hola</p>
-    </div>
+    <Header />
+    <section class="bg-slate-200 w-3/4 h-auto m-auto mt-14 flex justify-center items-center flex-col rounded-xl mb-14">
+        <div class=" w-full h-auto flex items-center justify-around p-5">
+            <figure class="">
+                <img  src={image.url} alt={image.alt} />
+              </figure>
+            <h1 class="text-4xl"><b>{title}</b></h1>
+            <p class="text-2xl font-bold">{author}</p>
+        </div>
+        <div class=" w-full h-auto p-5 text-justify">
+          <slot/>
+        </div>
+        <a href="/">
+            <button>VOLVER</button>
+        </a>
+    </section>
 </Layout>
+
+<style>
+    a {
+        height: 100%;
+    }
+    section {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    figure {
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    h1 {
+        font-family: system-ui, sans-serif;
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    p {
+        font-family: system-ui, sans-serif;
+
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+    img {
+        max-width: 40%;
+        max-height: 40%;
+    }
+    button {
+  --color: red;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: .6s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+button:hover {
+    background-color: rgba(152,10,10,1);
+}
+
+</style>

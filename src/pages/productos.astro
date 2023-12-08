@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Descripcion from "../components/Descripcion.astro";
 import Secciones from "../components/Secciones.astro";
 import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 
@@ -19,7 +20,7 @@ import Footer from "../components/Footer.astro";
             ¡Descubre el auténtico sabor de nuestras hamburguesas en cada bocado!
         `}
     />
-    <section id="seccionProductos" class="h-auto w-full mt-[35vh] mb-[20vh] flex justify-center flex-col ">
+    <section id="seccionProductos" class="h-auto w-full mt-[35vh] mb-[20vh] flex justify-center flex-col " >
         <h2 class="text-3xl">¿QUÉ VAS A ELEGIR?</h2>
         <Secciones />
     </section>
