@@ -2,15 +2,39 @@
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import FAQCard from "../components/FAQCard.astro";
+import Footer from "../components/Footer.astro";
 ---
 <Layout title="Preguntas frecuentes">
     <Header />
-    <section class="bg-white w-3/4 m-auto h-auto mt-10">
-        <FAQCard title="Que hago si soy alergico" />
+    <h1 class="flex justify-center items-center">PREGUNTAS FRECUENTES</h1>
+    <section class=" w-4/5 m-auto h-auto mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto  ">
+     
+        <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+        Si eres alérgico, por favor ponte en contacto con nuestro `} />
+        <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+        Si eres alérgico, por favor ponte en contacto con nuestro `}/> 
+        <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+        Si eres alérgico, por favor ponte en contacto con nuestro `} />
+
+        <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `} />
+            <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `}/> 
+            <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `} />
+
+        <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `} />
+            <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `}/> 
+            <FAQCard title="Que hago si soy alergico" numero="1" respuesta={`
+            Si eres alérgico, por favor ponte en contacto con nuestro `} />
     </section>
+    <Footer />
 </Layout>
 
 <style>
+
     @font-face {
         font-family: 'merienda';
         src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');

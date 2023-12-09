@@ -1,13 +1,47 @@
 ---
 interface Props {
     title: string;
-    respuesta: string;
+    respuesta: any;
     numero: string;
 }
 const {title,respuesta,numero} = Astro.props;
 ---
-<div class="bg-slate-500 w-96 h-52">
-    <div class="">
-        <h3>{title}</h3>
+<div  class="card w-[350px] h-40 flex justify-center flex-col bg-white rounded-lg ">
+    <div class="flex justify-start items-center">
+        <div class="w-[25px] h-[25px] flex justify-center items-center p-5">
+            <p class="text-2xl">{numero}.</p>
+        </div>
+        <div class=" h-auto w-auto">
+            <h3 class="text-lg">{title}</h3>
+        </div>
+    </div>
+    <div class=" w-full h-full p-3 m-auto">
+        <p class="text-base text-justify">{respuesta}</p>
     </div>
 </div>
+
+<style>
+   .card {
+        border-radius: 10px;
+        background: #f8f6f6;
+        box-shadow: 0 0 7px #ffffff;
+      
+}
+        #card{
+            max-width: 100%;
+            transition: transform 0.3s ease-in-out;
+            font-family: 'merienda-regular';
+        }
+        p {
+            letter-spacing: -1.2px;
+        }
+        h3 {
+            letter-spacing: -0.8px;
+            color: #292828;
+            text-shadow: 0 0 0.3px black;
+        }
+        #card:hover {
+            transform: scale(1.1); /* Puedes ajustar la escala según tus preferencias */
+            cursor: pointer;
+        }
+</style>
