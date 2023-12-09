@@ -6,7 +6,7 @@ interface Props {
 }
 const {title,respuesta,numero} = Astro.props;
 ---
-<div  class="card w-[350px] h-40 flex justify-center flex-col bg-white rounded-lg ">
+<div class=" w-auto h-auto flex justify-center flex-col bg-white rounded-lg ">
     <div class="flex justify-start items-center">
         <div class="w-[25px] h-[25px] flex justify-center items-center p-5">
             <p class="text-2xl">{numero}.</p>
@@ -21,7 +21,7 @@ const {title,respuesta,numero} = Astro.props;
 </div>
 
 <style>
-   .card {
+   #card {
         border-radius: 10px;
         background: #f8f6f6;
         box-shadow: 0 0 7px #ffffff;
@@ -35,11 +35,7 @@ const {title,respuesta,numero} = Astro.props;
         p {
             letter-spacing: -1.2px;
         }
-        h3 {
-            letter-spacing: -0.8px;
-            color: #292828;
-            text-shadow: 0 0 0.3px black;
-        }
+      
         #card:hover {
             transform: scale(1.1); /* Puedes ajustar la escala según tus preferencias */
             cursor: pointer;
