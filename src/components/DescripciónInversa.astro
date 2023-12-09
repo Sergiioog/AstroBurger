@@ -10,18 +10,24 @@ interface Props {
 const {title,descripcion,imagen} = Astro.props;
 ---
 
-<section class="h-auto w-full flex justify-center mt-14 items-center max-w-full m-auto">
-    <div class=" h-[50vh] mr-12">
+<section class=" h-auto w-full flex justify-center mt-14 items-center max-w-full m-auto">
+    <div class="h-[50vh] ">
         <img src={imagen} alt="imagen burger">
     </div>
-    <div id="seccionTexto" class="w-[40%] h-autoflex justify-center flex-col p-5 mt-10 ml-12">
+   
+    <div id="seccionTexto" class=" w-[40%] h-autoflex justify-center flex-col p-5 mt-10 ml-40">
         <h1 class=" h-auto w-auto flex justify-center
         text-4xl">{title}</h1>
-        <p class="p-5 text-justify mt-5 mb-3"> 
+        <p class="p-5 text-justify mt-5 mb-3 "> 
            {descripcion}
-           
+           <br/>
         </p>
+        <!-- <div class=" flex justify-center items-center">
+            <Boton />
+        </div> -->
+        
     </div>
+   
 </section>
 
 
