@@ -5,71 +5,82 @@ import CardProducto from "./CardProducto.astro";
 
 
 <section class="w-4/5 h-auto mt-5 mb-42 m-auto p-5 rounded-2xl">
-
-    <div class="h-auto w-[60vw] mx-auto mt-5">
-        <ul class="h-full w-full flex justify-around items-center">
+    <h2 class="text-3xl flex justify-center items-center">NUESTROS PRODUCTOS </h2>
+    <div class="h-auto w-[80vw] mx-auto mt-16 flex justify-around items-center flex-col">
+        <ul class="h-full w-3/4 flex justify-evenly items-center">
             <li class="text-lg">HAMBURGUESAS</li>
             <li class="text-lg">COMPLEMENTOS</li>
-            <li class="text-lg">BEBIDAS</li>
+            <li class="text-lg">SHAKES</li>
             <li class="text-lg">POSTRES</li>
-          </ul>
+        </ul>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16">
+            <CardProducto 
+            title="ORIGINALS"
+            imgProducto="assets/photos/hamburguesas/burger1.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="SUPREME"
+            imgProducto="assets/photos/hamburguesas/burger2.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="BACONCHEESE"
+            imgProducto="assets/photos/hamburguesas/burger3.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="VEGAN TRUFFLE"
+            imgProducto="assets/photos/hamburguesas/burger4.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="CHEESBURGER IBÉRICA"
+            imgProducto="assets/photos/hamburguesas/burger5.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="VEGGIE DELIGHT"
+            imgProducto="assets/photos/hamburguesas/burger6.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="BACON CHEESBURGER"
+            imgProducto="assets/photos/hamburguesas/burger8.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="CHEESBURGER"
+            imgProducto="assets/photos/hamburguesas/burger9.png"
+            section="hamburguesas"
+        />
+        <CardProducto 
+            title="TRUFFLE"
+            imgProducto="assets/photos/hamburguesas/burger.png"
+            section="hamburguesas"
+        />
+        </div>
         
     </div>
    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto mt-16">
-        <CardProducto 
-        title="ORIGINALS"
-        imgProducto="assets/photos/hamburguesas/burger1.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="SUPREME"
-        imgProducto="assets/photos/hamburguesas/burger2.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="BACONCHEESE"
-        imgProducto="assets/photos/hamburguesas/burger3.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="VEGAN TRUFFLE"
-        imgProducto="assets/photos/hamburguesas/burger4.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="CHEESBURGER IBÉRICA"
-        imgProducto="assets/photos/hamburguesas/burger5.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="VEGGIE DELIGHT"
-        imgProducto="assets/photos/hamburguesas/burger6.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="BACON CHEESBURGER"
-        imgProducto="assets/photos/hamburguesas/burger8.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="CHEESBURGER"
-        imgProducto="assets/photos/hamburguesas/burger9.png"
-        section="hamburguesas"
-    />
-    <CardProducto 
-        title="TRUFFLE"
-        imgProducto="assets/photos/hamburguesas/burger.png"
-        section="hamburguesas"
-    />
-    </div>
+    
 
 
    
 </section>
 
 <style>
-    
+        #seccionTexto h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
+    li:hover {
+        cursor: pointer;
+    }
 
     li {
         color: #fff; /* Texto blanco */

@@ -1,0 +1,25 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+<Layout title="Page Not Found">
+    <Header />
+    <figure class="flex justify-center items-center mt-20 flex-col">
+        <h1 class="text-5xl w-[50vw]  ">UPS! NO HEMOS PODIDO ENCONTRAR LA PÁGINA</h1>
+        <img class="max-w-full max-h-full mt-3" src="assets/photos/404foto.png" alt="Error 404">
+    </figure>
+
+</Layout>
+<style>
+    @font-face {
+        font-family: 'merienda';
+        src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
+    }
+      h1 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+    }
+</style>
