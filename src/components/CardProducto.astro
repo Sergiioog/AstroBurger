@@ -3,11 +3,12 @@ interface Props {
     title:string;
     imgProducto: string;
     section: string;
+    id: any;
 }
 
-const {title, imgProducto,section} = Astro.props;
+const {title, imgProducto,section,id} = Astro.props;
 ---
-<div id="card" class="card w-[330px] h-[330px] overflow-hidden m-2">
+<div id="card" class="card w-[330px] h-[330px] overflow-hidden m-2" {id}>
     <figure class="h-[75%] relative">
         <img class="w-full h-full object-cover" src={imgProducto} alt={`Imagen de ${section}`}>
     </figure>

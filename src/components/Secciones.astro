@@ -1,5 +1,8 @@
 ---
 import CardProducto from "./CardProducto.astro";
+
+
+
 ---
 
 
@@ -8,66 +11,168 @@ import CardProducto from "./CardProducto.astro";
     <h2 class="text-3xl flex justify-center items-center">NUESTROS PRODUCTOS </h2>
     <div class="h-auto w-[80vw] mx-auto mt-16 flex justify-around items-center flex-col">
         <ul class="h-full w-3/4 flex justify-evenly items-center">
-            <li class="text-lg">HAMBURGUESAS</li>
+            <li class="text-lg" onclick="secciones()">HAMBURGUESAS</li>
             <li class="text-lg">COMPLEMENTOS</li>
             <li class="text-lg">SHAKES</li>
             <li class="text-lg">POSTRES</li>
         </ul>
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16">
-            <CardProducto 
-            title="ORIGINALS"
-            imgProducto="assets/photos/hamburguesas/burger1.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="SUPREME"
-            imgProducto="assets/photos/hamburguesas/burger2.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="BACONCHEESE"
-            imgProducto="assets/photos/hamburguesas/burger3.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="VEGAN TRUFFLE"
-            imgProducto="assets/photos/hamburguesas/burger4.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="CHEESBURGER IBÉRICA"
-            imgProducto="assets/photos/hamburguesas/burger5.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="VEGGIE DELIGHT"
-            imgProducto="assets/photos/hamburguesas/burger6.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="BACON CHEESBURGER"
-            imgProducto="assets/photos/hamburguesas/burger8.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="CHEESBURGER"
-            imgProducto="assets/photos/hamburguesas/burger9.png"
-            section="hamburguesas"
-        />
-        <CardProducto 
-            title="TRUFFLE"
-            imgProducto="assets/photos/hamburguesas/burger.png"
-            section="hamburguesas"
-        />
+        <div id="Hamburguesas" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+            <a href="/resumen">
+                <CardProducto 
+                    title="ORIGINALS"
+                    imgProducto="assets/photos/hamburguesas/burger1.png"
+                    section="hamburguesas",
+                    id="1"
+                />
+            </a>
+                <CardProducto 
+                    title="SUPREME"
+                    imgProducto="assets/photos/hamburguesas/burger2.png"
+                    section="hamburguesas"
+                    id="2"
+                />
+                <CardProducto 
+                    title="BACONCHEESE"
+                    imgProducto="assets/photos/hamburguesas/burger3.png"
+                    section="hamburguesas"
+                    id="3"
+                />
+                <CardProducto 
+                    title="VEGAN TRUFFLE"
+                    imgProducto="assets/photos/hamburguesas/burger4.png"
+                    section="hamburguesas"
+                    id="4"
+                />
+                <CardProducto 
+                    title="CHEESBURGER IBÉRICA"
+                    imgProducto="assets/photos/hamburguesas/burger5.png"
+                    section="hamburguesas"
+                    id="5"
+                />
+                <CardProducto 
+                    title="VEGGIE DELIGHT"
+                    imgProducto="assets/photos/hamburguesas/burger6.png"
+                    section="hamburguesas"
+                    id="6"
+                />
+                <CardProducto 
+                    title="BACON CHEESBURGER"
+                    imgProducto="assets/photos/hamburguesas/burger8.png"
+                    section="hamburguesas"
+                    id="7"
+                />
+                <CardProducto 
+                    title="CHEESBURGER"
+                    imgProducto="assets/photos/hamburguesas/burger9.png"
+                    section="hamburguesas"
+                    id="8"
+                />
+                <CardProducto 
+                    title="TRUFFLE"
+                    imgProducto="assets/photos/hamburguesas/burger.png"
+                    section="hamburguesas"
+                    id="9"
+                />
         </div>
         
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+            <a href="/resumen">
+                <CardProducto 
+                    title="FRIES"
+                    imgProducto="assets/photos/complementos/patatas.png"
+                    section="complementos",
+                    id="10"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="BACON FRIES"
+                    imgProducto="assets/photos/complementos/patatasbacon.png"
+                    section="complementos",
+                    id="11"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="TRUFFLE FRIES"
+                    imgProducto="assets/photos/complementos/patatastrufadas.png"
+                    section="complementos",
+                    id="12"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="ALITAS DE POLLO"
+                    imgProducto="assets/photos/complementos/alitas.png"
+                    section="complementos",
+                    id="13"
+                />
+            </a>
+        </div>
+
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+            <a href="/resumen">
+                <CardProducto 
+                    title="CHOCOSHAKE"
+                    imgProducto="assets/photos/shakes/choco.png"
+                    section="shakes",
+                    id="14"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="MILKSHAKE"
+                    imgProducto="assets/photos/shakes/leche.png"
+                    section="shakes",
+                    id="15"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="CARAMELSHAKE"
+                    imgProducto="assets/photos/shakes/lotus.png"
+                    section="shakes",
+                    id="16"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="OREOSHAKE"
+                    imgProducto="assets/photos/shakes/oreo.png"
+                    section="shakes",
+                    id="17"
+                />
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+            <a href="/resumen">
+                <CardProducto 
+                    title="NUTELLA CHEESCAKE"
+                    imgProducto="assets/photos/postres/tartaquesonutella.png"
+                    section="postres",
+                    id="18"
+                />
+            </a>
+            <a href="/resumen">
+                <CardProducto 
+                    title="OREO TIRAMISU"
+                    imgProducto="assets/photos/postres/tiramisu.png"
+                    section="postres",
+                    id="19"
+                />
+            </a>
+        </div>
     </div>
-   
-    
-
-
-   
 </section>
+
+
+</script>
+
+
+
 
 <style>
         #seccionTexto h1,h2 {
@@ -80,6 +185,7 @@ import CardProducto from "./CardProducto.astro";
     }
     li:hover {
         cursor: pointer;
+        color: rgb(225, 204, 204);
     }
 
     li {
