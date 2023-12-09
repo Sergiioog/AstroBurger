@@ -2,20 +2,20 @@
 ---
 
 <header class="w-full h-20 flex justify-around items-center bg-white text-black">
-    <div class="h-full w-28 flex justify-center items-center">
-         <img class="max-h-full max-w-full" src="assets/photos/logo.png" alt="Icono AstroBurgers">
+    <div class="h-full w-auto flex justify-center items-center">
+         <p class="text-xl mb-3">ASTROBURGERS</p>
     </div>
     <ul class="h-full w-auto flex justify-center items-center m-auto">
-         <li class="m-5 text-xl">
+         <li class="m-5 text-lg">
             <a href="/">INICIO</a>
          </li>
-         <li class="m-5 text-xl">
+         <li class="m-5 text-lg">
             <a href="/productos">PRODUCTOS</a>
          </li>
-         <li class="m-5 text-xl">
+         <li class="m-5 text-lg">
             <a href="/about">ABOUT</a>
          </li>
-         <li class="m-5 text-xl">
+         <li class="m-5 text-lg">
             <a href="/faq">FAQ</a>
          </li>
      </ul>
@@ -56,6 +56,7 @@
         border-radius: 10px; /* Esquinas redondeadas para un aspecto más suave */
         /* Otros estilos adicionales que desees agregar */
         transition: transform 0.3s ease-out;
+        font-family: 'merienda', system-ui, sans-serif;
      }
      li:hover {
         transform: translateY(-3px);
@@ -72,6 +73,13 @@
      svg:hover {
         transform: translateY(-3px);
 
+     }
+     p {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
      }
   
  </style>

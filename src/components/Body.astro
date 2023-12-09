@@ -9,18 +9,26 @@ import Footer from "./Footer.astro";
     <Titulo title="ASTROBURGER"  />
     <section class="w-full h-auto flex justify-center items-center flex-col mt-40">
         <h2 class="text-4xl text-white">NUESTROS PRODUCTOS</h2>
-        <div class="mt-28 w-auto h-full grid grid-cols-2 ">
-            <a href="/productos"> 
-                <CardVideo titulo="Entrantes" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+        <div class="mt-10 w-auto h-full grid grid-cols-2 gap-0">
+            <a href="/productos" class="transform transform-origin-center 
+            transition-transform duration-300 ease-in-out hover:scale-105
+            hover:cursor-pointer"> 
+                <CardVideo titulo="HAMBURGUESAS" urlFoto="../public/assets/photos/hamburguesas/burger4.png"  alt="Foto Burger" />
             </a>
-            <a href="/productos"> 
-                <CardVideo titulo="Burger de Carne" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            <a href="/productos" class="transform transform-origin-center 
+            transition-transform duration-300 ease-in-out hover:scale-105
+            hover:cursor-pointer"> 
+                <CardVideo titulo="COMPLEMENTOS" urlFoto="../public/assets/photos/complementos/patatasbacon.png"  alt="Foto Patatas" />
             </a>
-            <a href="/productos"> 
-                <CardVideo titulo="Bebidas" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            <a href="/productos" class="transform transform-origin-center 
+            transition-transform duration-300 ease-in-out hover:scale-105
+            hover:cursor-pointer"> 
+                <CardVideo titulo="POSTRES" urlFoto="../public/assets/photos/postres/tartaquesonutella.png"  alt="Foto Tarta Queso" />
             </a>
-            <a href="/productos"> 
-                <CardVideo titulo="Postres" urlVideo="../public/assets/videos/ejemplo.mp4"  />
+            <a href="/productos" class="transform transform-origin-center 
+            transition-transform duration-300 ease-in-out hover:scale-105
+            hover:cursor-pointer"> 
+                <CardVideo titulo="SHAKES" urlFoto="../public/assets/photos/shakes/choco.png"  alt="Foto Shake" />
             </a>
         <div>
     </section>
@@ -30,6 +38,8 @@ import Footer from "./Footer.astro";
     h2 {
         font-family: 'merienda', system-ui, sans-serif;
         text-shadow: 2px 2px 2px black;
-        
+    }
+    a:hover {
+
     }
 </style>

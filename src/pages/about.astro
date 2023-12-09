@@ -5,12 +5,13 @@ import Descripcion from "../components/Descripcion.astro";
 import DescripcionInversa from "../components/DescripciónInversa.astro";
 import CardAbout from "../components/CardAbout.astro";
 import Footer from "../components/Footer.astro";
+import Boton from "../components/Boton.astro";
 ---
 <Layout title="About us">
     <Header />
     <section class=" h-auto w-full">
         <Descripcion 
-        title="¿QUIENES SOMOS?",
+        titulo="¿QUIENES SOMOS?",
         descripcion={`
             Astroburger nace como un proyecto revolucionario que redefine la experiencia del usuario, 
             brindándoles un trato excepcional. Somos una marca de hamburguesas que desafía lo convencional, 
@@ -19,30 +20,31 @@ import Footer from "../components/Footer.astro";
             tecnología de personalización en pedidos y nos comprometemos con prácticas sostenibles. 
             Astroburger no es simplemente una hamburguesa, es una vivencia cósmica en cada bocado. `},
         imagen="assets/logo.png"/>
+
     </section>
     <section class="h-auto w-full">
         <DescripcionInversa 
-        title="¿QUIENES SOMOS?",
-        descripcion={`
-            Astroburger nace como un proyecto revolucionario que redefine la experiencia del usuario, 
-            brindándoles un trato excepcional. Somos una marca de hamburguesas que desafía lo convencional, 
-            desde la selección cuidadosa de ingredientes de alta calidad hasta el diseño futurista de nuestros 
-            locales, todo con el objetivo de proporcionar una experiencia única. Incorporamos innovación con 
-            tecnología de personalización en pedidos y nos comprometemos con prácticas sostenibles. 
-            Astroburger no es simplemente una hamburguesa, es una vivencia cósmica en cada bocado. `},
+        title="EL OBJETIVO",
+        descripcion={`Fundada con la visión audaz de reinventar la experiencia gastronómica, hemos pasado de ser una pequeña hamburguesería 
+        a convertirnos en un destino reconocido por la calidad, la innovación y la atención excepcional al cliente.A lo largo de los años, 
+        hemos expandido nuestras operaciones, pero nuestra misión sigue siendo la misma: proporcionar una vivencia cósmica en cada bocado. 
+        Además, nos enorgullece contribuir a un mundo más sostenible, adoptando prácticas que respetan nuestro entorno y apoyan a nuestras comunidades.
+           `},
         imagen="assets/photos/hamburguesas/burger3.png"/>
     </section>
-    <section class="h-auto w-full mt-32">
-        <h3 class="text-4xl" >¿POR QUÉ ASTROBURGER?</h3>
-        <div class=" rounded-xl w-3/4 m-auto mt-10 flex justify-around items-center gap-14 p-5">
-
-            <CardAbout/>
-            <CardAbout/>
-            <CardAbout/>
-            <CardAbout/>
+    <section class="h-auto w-full mt-32" id="equipo">
+        <h3 class="text-4xl" >NUESTRO EQUIPO</h3>
+        <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />    
+            <CardAbout logo="assets/iconos/casa.svg" alt="logo" titulo="Envío a domicilio" descripcion={`
+            Hacemos envío a domicilio en tiempo récord`} />
         </div>
     </section>
-
     <Footer />
 </Layout>
 
@@ -53,7 +55,6 @@ import Footer from "../components/Footer.astro";
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
         letter-spacing: -2px;
         text-align: center;
-
     }
 
   
