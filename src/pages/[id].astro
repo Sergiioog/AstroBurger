@@ -83,7 +83,7 @@ export async function getStaticPaths() {
 const {id} = Astro.params;
 const {producto} = Astro.props;
 ---
-<Layout title="Tu producto">
+<Layout title={producto.title}>
     <Header/>
 
     <section class="h-[auto] w-[70vw] m-auto flex mt-20 ">

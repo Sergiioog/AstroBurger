@@ -36,28 +36,28 @@ import Boton from "../components/Boton.astro";
         <h3 class="text-4xl" >¿POR QUÉ ASTROBURGERS?</h3>
         <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
             <CardAbout
-            logo="assets/iconos/alarm.svg"
+            logo="assets/icons/alarm.svg"
             alt="logo reloj"
             titulo="Entrega Rápida"
             descripcion="Ofrecemos entrega rápida para que puedas disfrutar de nuestras deliciosas hamburguesas en poco tiempo."
             />
 
             <CardAbout
-            logo="assets/iconos/award.svg"
+            logo="assets/icons/award.svg"
             alt="logo award"
             titulo="Calidad Premiada"
             descripcion="Nuestras hamburguesas han sido premiadas por su calidad excepcional y sabores deliciosos."
             />
 
             <CardAbout
-            logo="public/assets/iconos/casa.svg"
+            logo="public/assets/icons/casa.svg"
             alt="logo casa"
             titulo="Ambiente Acogedor"
             descripcion="Te invitamos a nuestro restaurante con un ambiente acogedor y familiar para que te sientas como en casa."
             />
 
             <CardAbout
-            logo="assets/iconos/wallet.svg"
+            logo="assets/icons/wallet.svg"
             alt="logo cartera"
             titulo="Precios Asequibles"
             descripcion="Disfruta de nuestras deliciosas hamburguesas a precios asequibles que se ajustan a tu bolsillo."
@@ -68,6 +68,10 @@ import Boton from "../components/Boton.astro";
 </Layout>
 
 <style>
+    @font-face {
+        font-family: 'merienda';
+        src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
+    }
     h3 {
         font-family: 'merienda', system-ui, sans-serif;
         color: #fff; /* Texto blanco */
@@ -75,6 +79,27 @@ import Boton from "../components/Boton.astro";
         letter-spacing: -2px;
         text-align: center;
     }
+     h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
 
+    }
+    li:hover {
+        cursor: pointer;
+        color: rgb(225, 204, 204);
+    }
+
+    li {
+        color: #fff; /* Texto blanco */
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        width: auto;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
   
 </style>
