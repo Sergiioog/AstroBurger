@@ -1,4 +1,5 @@
 ---
+// Componente de about
 interface Props {
   logo:string;
   titulo:string;
@@ -7,7 +8,7 @@ interface Props {
 }
 const {logo, titulo, descripcion,alt} = Astro.props;
 ---
-<div class="bg-white h-[350px] w-[300px] rounded-lg flex items-center flex-col pt-5">
+<div id="card" class="bg-white h-[350px] w-[300px] rounded-lg flex items-center flex-col pt-5">
   <figure class=" w-full h-auto flex justify-center overflow-hidden">
     <img class="w-32 h-32 object-cover" src={logo} alt={alt}>
   </figure>
@@ -22,11 +23,17 @@ const {logo, titulo, descripcion,alt} = Astro.props;
    
 
 <style>
-
-img {
-  height: 100px;
-  width: 100px;
-  max-height: 100%;
-  max-width: 100%;
-}
+  #card {
+    transition: transform 1s ease-out;
+  }
+  #card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    max-height: 100%;
+    max-width: 100%;
+  }
 </style>

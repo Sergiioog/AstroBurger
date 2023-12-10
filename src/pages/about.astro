@@ -1,15 +1,17 @@
 ---
+// Pagina de about 
+
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Descripcion from "../components/Descripcion.astro";
 import DescripcionInversa from "../components/DescripciónInversa.astro";
 import CardAbout from "../components/CardAbout.astro";
 import Footer from "../components/Footer.astro";
-import Boton from "../components/Boton.astro";
 ---
 <Layout title="About us">
     <Header />
-    <section class=" h-auto w-full">
+    <!-- Importo los componentes Descripcion y DescripcionInversa que tienen la misma distribución pero cambiados de orden -->
+    <section class=" h-auto w-full"> 
         <Descripcion 
         titulo="¿QUIENES SOMOS?",
         descripcion={`
@@ -35,6 +37,7 @@ import Boton from "../components/Boton.astro";
     <section class="h-auto w-full mt-32" id="equipo">
         <h3 class="text-4xl" >¿POR QUÉ ASTROBURGERS?</h3>
         <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
+            <!-- Importo las cards con sus atributos -->
             <CardAbout
             logo="assets/icons/alarm.svg"
             alt="logo reloj"

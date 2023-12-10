@@ -1,13 +1,11 @@
 ---
-import Boton from './Boton.astro';
-import Header from './Header.astro';
 
 
 interface Props {
     titulo:string;
     descripcion:any;
     imagen:string;
-    frase?:string;
+    frase?:string; //Frase pasa a ser opcional ?:
 
 }
 const {titulo,descripcion,imagen,frase} = Astro.props;
@@ -22,9 +20,7 @@ const {titulo,descripcion,imagen,frase} = Astro.props;
            <br/>
            {frase}
         </p>
-        <!-- <div class=" flex justify-center items-center">
-            <Boton ruta='#seccionProductos' titulo='SABER MAS' />
-        </div> -->
+
         
     </div>
     <div class="w-[40%] h-[50vh] ml-32">

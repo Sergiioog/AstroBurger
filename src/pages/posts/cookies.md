@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/LayoutTerminos.astro"
+layout: "../../layouts/LayoutTerminos.astro" 
 title: 'Terminos y Condiciones'
 author: 'Astroburger ©'
 image:
