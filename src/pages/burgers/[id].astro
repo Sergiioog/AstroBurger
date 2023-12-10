@@ -1,14 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
 
+export async function getStaticPaths() {
+    const posts = [
+        {id:'1',category:"rover",title:"perro de combate" },
+        {id:'2', category:"sabueso",title:"perro de hueso"},
+        {id:'3', category:"punchis",title:"perro fumon"},
+    ]
+
+    return posts.map((post) => {
+        return {
+            params: {id: post.id},
+            props: {post}
+        }
+    });
+}
+const {id} = Astro.params;
+const {post} = Astro.props;
 ---
 <Layout title="Tu producto">
     <Header />
     <section class="bg-white h-[100vh] w-[70vw] m-auto flex justify-center ">
         <div class="bg-red-500 w-[50%] h-[50%] flex justify-center items-center text-justify flex-col">
-            <h1></h1>
+            <h1>El perro {id} </h1>
+            <p>tiene una categoria de: {post.category} </p>
+            <p>Y su titulo es: {post.title}</p>
             <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut natus dolore commodi, aspernatur dicta. Assumenda 
                 temporibus ipsa quae, id et officiis provident ab aperiam, adipisci quia, molestias hic exercitationem.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nemo, veniam ratione quasi at repudiandae asperiores reprehenderit 
