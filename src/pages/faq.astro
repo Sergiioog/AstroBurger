@@ -6,17 +6,17 @@ import Footer from "../components/Footer.astro";
 ---
 <Layout title="Preguntas frecuentes">
     <Header />
-    <h1 class="flex justify-center items-center">PREGUNTAS FRECUENTES</h1>
-    <section class=" w-4/5 m-auto h-auto mt-10 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto  ">
-        <FAQCard title="¿Qué opciones tienes para personas con alergias alimentarias?" respuesta="Si eres alérgico, por favor ponte en contacto con nuestro equipo. Tenemos opciones personalizadas y podemos proporcionar información detallada sobre los ingredientes de nuestros productos." numero="1"/>
-        <FAQCard title="¿Cómo puedo realizar un pedido en línea?" respuesta="Para realizar un pedido en línea, simplemente navega por nuestro menú, selecciona los productos que deseas y sigue los pasos para finalizar la compra. Puedes pagar de manera segura y recibirás una confirmación por correo electrónico."  numero="2"/>
-        <FAQCard title="¿Ofrecen opciones vegetarianas o veganas?" respuesta="Sí, tenemos opciones vegetarianas y veganas en nuestro menú. Consulta la sección correspondiente para encontrar deliciosas alternativas a base de plantas."  numero="3"/>
-        <FAQCard title="¿Cuáles son las opciones de entrega disponibles?" respuesta="Ofrecemos servicios de entrega a domicilio y también puedes optar por recoger tu pedido en nuestro local. Elige la opción que mejor se adapte a tus necesidades durante el proceso de compra en línea."  numero="4"/>
-        <FAQCard title="¿Cómo puedo realizar modificaciones a mi pedido después de realizar la compra?" respuesta="Si necesitas realizar cambios en tu pedido después de confirmarlo, te recomendamos que nos llames directamente. Haremos todo lo posible para ayudarte con las modificaciones necesarias."  numero="5"/>
-        <FAQCard title="¿Cuál es su política de devoluciones?" respuesta="Nuestra política de devoluciones varía según la situación. Si tienes algún problema con tu pedido, comunícate con nuestro servicio al cliente para que podamos resolverlo de la mejor manera posible."  numero="6"/>
-        <FAQCard title="¿Puedo personalizar mi hamburguesa con ingredientes específicos?" respuesta="Sí, ofrecemos opciones de personalización. Durante el proceso de pedido en línea, encontrarás la opción de agregar o eliminar ingredientes según tus preferencias."  numero="7"/>
-        <FAQCard title="¿Cómo puedo obtener cupones de descuento o promociones?" respuesta="Mantente atento a nuestras redes sociales y suscríbete a nuestro boletín informativo para recibir actualizaciones sobre promociones y cupones. También ofrecemos ofertas especiales durante eventos y festividades."  numero="8"/>
-        <FAQCard title="¿Tienen opciones para eventos o catering?" respuesta="Sí, ofrecemos servicios de catering para eventos especiales. Ponte en contacto con nuestro equipo de eventos para discutir tus necesidades y crear un paquete personalizado para tu ocasión especial."  numero="9"/>
+    <h1 class="flex justify-center items-center text-4xl mt-10">PREGUNTAS FRECUENTES</h1>
+    <section class=" w-4/5 m-auto h-auto mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
+        <FAQCard title="Alergias" respuesta="Si eres alérgico, por favor ponte en contacto con nuestro equipo. Te proporcionaremos información detallada sobre los ingredientes de nuestros productos." numero="1"/>
+        <FAQCard title="Pedidos" respuesta="Para realizar un pedido, simplemente navega por nuestro menú, selecciona los productos que deseas y sigue los pasos para finalizar la compra."  numero="2"/>
+        <FAQCard title="Opciones vegetarianas o veganas" respuesta="Sí, tenemos opciones vegetarianas y veganas en nuestro menú cómo nuestras hamburguesas Veggie Delight o Veggan Truffle."  numero="3"/>
+        <FAQCard title="Opciones de entrega" respuesta="Ofrecemos servicios de entrega a domicilio y también puedes optar por recoger tu pedido en nuestro local. Elige la opción que mejor se adapte a tus necesidades."  numero="4"/>
+        <FAQCard title="Modificaciones en mi pedido" respuesta="Si necesitas realizar cambios en tu pedido después de confirmarlo, te recomendamos que nos llames directamente o cancele el pedido y vuelva a hacerlo."  numero="5"/>
+        <FAQCard title="Política de devoluciones" respuesta="Si tienes algún problema con tu pedido, comunícate con nuestro servicio al cliente para que podamos resolverlo de la mejor manera posible."  numero="6"/>
+        <FAQCard title="Personalizar mi hamburguesa con ingredientes específicos" respuesta="Sí, ofrecemos opciones de personalización. Durante el proceso de pedido en línea, encontrarás la opción de agregar o eliminar ingredientes según tus preferencias."  numero="7"/>
+        <FAQCard title="Cupones de descuento o promociones" respuesta="Mantente atento a nuestras redes sociales y suscríbete a nuestro boletín informativo para recibir actualizaciones sobre promociones y cupones."  numero="8"/>
+        <FAQCard title="Eventos y catering" respuesta="No ofrecemos servicios de catering, sólamente vendemos nuestros productos en nuestro local o a domicilio."  numero="9"/>
     </section>
     <Footer />
 </Layout>
@@ -27,5 +27,12 @@ import Footer from "../components/Footer.astro";
         font-family: 'merienda';
         src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
     }
-   
+    h1{
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: -2px;
+        text-align: center;
+
+    }
 </style>

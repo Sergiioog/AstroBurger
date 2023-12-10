@@ -33,16 +33,35 @@ import Boton from "../components/Boton.astro";
         imagen="assets/photos/hamburguesas/burger3.png"/>
     </section>
     <section class="h-auto w-full mt-32" id="equipo">
-        <h3 class="text-4xl" >NUESTRO EQUIPO</h3>
+        <h3 class="text-4xl" >¿POR QUÉ ASTROBURGERS?</h3>
         <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
-            <CardAbout logo="assets/photos/equipo/chico1.jpeg" alt="logo" titulo="Jake Turner" descripcion={`
-            CEO`} />
-            <CardAbout logo="assets/photos/equipo/chica1.jpeg" alt="logo" titulo="Emily Davis " descripcion={`
-            Customer Service Specialist`} />
-            <CardAbout logo="assets/photos/equipo/chico2.jpeg" alt="logo" titulo="Alex Mitchell" descripcion={`
-            Head Chef`} />    
-            <CardAbout logo="assets/photos/equipo/chica2.jpeg" alt="logo" titulo="Olivia Brooks " descripcion={`
-            Marketing Coordinator`} />
+            <CardAbout
+            logo="assets/iconos/alarm.svg"
+            alt="logo reloj"
+            titulo="Entrega Rápida"
+            descripcion="Ofrecemos entrega rápida para que puedas disfrutar de nuestras deliciosas hamburguesas en poco tiempo."
+            />
+
+            <CardAbout
+            logo="assets/iconos/award.svg"
+            alt="logo award"
+            titulo="Calidad Premiada"
+            descripcion="Nuestras hamburguesas han sido premiadas por su calidad excepcional y sabores deliciosos."
+            />
+
+            <CardAbout
+            logo="public/assets/iconos/casa.svg"
+            alt="logo casa"
+            titulo="Ambiente Acogedor"
+            descripcion="Te invitamos a nuestro restaurante con un ambiente acogedor y familiar para que te sientas como en casa."
+            />
+
+            <CardAbout
+            logo="assets/iconos/wallet.svg"
+            alt="logo cartera"
+            titulo="Precios Asequibles"
+            descripcion="Disfruta de nuestras deliciosas hamburguesas a precios asequibles que se ajustan a tu bolsillo."
+            />
         </div>
     </section>
     <Footer />
