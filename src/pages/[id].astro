@@ -67,7 +67,7 @@ export async function getStaticPaths() {
         {id:'17',title:"OREOSHAKE",image:'assets/photos/shakes/oreo.png',alt:'Oreo Shake',
         precio:'12,99',descripcion1:'Milkshake with oreos ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        
+
         //POSTRES
         {id:'18',title:"NUTELLA CHEESCAKE",image:'assets/photos/postres/tartaquesonutella.png',alt:'Nutella Cheescake',
         precio:'12,99',descripcion1:'Nutella Cheescake, must try it',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
@@ -78,6 +78,7 @@ export async function getStaticPaths() {
         
     ]
 
+    //Devulevo un mapeo de los elementos del array y hago que id sea el parametro que se va a meter en la url y producto (junto con sus atributos) como parametros 
     return productos.map((producto) => {
         return {
             params: {id: producto.id},
@@ -88,9 +89,8 @@ export async function getStaticPaths() {
 const {id} = Astro.params;
 const {producto} = Astro.props;
 ---
-<Layout title={producto.title}>
+<Layout title={producto.title}> <!--Llamo a los atributos de cada componente mediante producto.atributo -->
     <Header/>
-
     <section class="h-[auto] w-[70vw] m-auto flex mt-20 ">
         <div class="w-[50%] h-full p-10 mr-10">
             <h1 class="text-3xl flex justify-center items-center text-center">{producto.title}</h1>
