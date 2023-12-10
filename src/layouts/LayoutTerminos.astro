@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 const {frontmatter} = Astro.props; //Hago una constante llamada frontmatter para poder utilizar atributos de los componentes
 const {title,author,image} = frontmatter;
 ---
+
 <Layout title={title}>
     <Header />
     <section class="bg-slate-50 w-3/4 h-auto m-auto mt-14 flex justify-center items-center flex-col rounded-xl mb-14">
@@ -17,9 +18,6 @@ const {title,author,image} = frontmatter;
         <div class=" w-full h-auto p-5 text-justify">
           <slot/> <!--Aqui va el contenido de los md -->
         </div>
-        <a href="/" class="h-full"> <!--Vuelve a la pantalla de inicio -->
-            <button>VOLVER</button>
-        </a>
     </section>
 </Layout>
 
