@@ -6,73 +6,79 @@ import Footer from "../components/Footer.astro";
 import React from "react";
 import Button from "../components/Button.astro";
 
+//Creo la funcion getStaticPaths() que se encarga de los atributos de los productos
 export async function getStaticPaths() {
-    const productos = [
-        {id:'1',title:"ORIGINALS",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',
+    //Creo un array de productos para poner sus atributos en el componente de manera dinamica
+    const productos = [ 
+        
+        //HAMBURGUESAS
+        {id:'1',title:"ORIGINALS",image:'assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',
         precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'2',title:"SUPREME",image:'public/assets/photos/hamburguesas/burger2.png',alt:'Hamburguesa Supreme',
+        {id:'2',title:"SUPREME",image:'assets/photos/hamburguesas/burger2.png',alt:'Hamburguesa Supreme',
         precio:'12,99',descripcion1:'Supreme, savor the Flavor',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'3',title:"BACONCHEESE",image:'public/assets/photos/hamburguesas/burger3.png',alt:'Hamburguesa Baconcheese',
+        {id:'3',title:"BACONCHEESE",image:'assets/photos/hamburguesas/burger3.png',alt:'Hamburguesa Baconcheese',
         precio:'12,99',descripcion1:'Bacon and Cheese, all you need',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'4',title:"VEGAN TRUFFLE",image:'public/assets/photos/hamburguesas/burger4.png',alt:'Hamburguesa Vegan Truffle',
+        {id:'4',title:"VEGAN TRUFFLE",image:'assets/photos/hamburguesas/burger4.png',alt:'Hamburguesa Vegan Truffle',
         precio:'12,99',descripcion1:'For Vegans, to Las Vegas',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'5',title:"CHEESBURGER IBÉRICA",image:'public/assets/photos/hamburguesas/burger5.png',alt:'Hamburguesa Cheesbuger Ibérica',
+        {id:'5',title:"CHEESBURGER IBÉRICA",image:'assets/photos/hamburguesas/burger5.png',alt:'Hamburguesa Cheesbuger Ibérica',
         precio:'12,99',descripcion1:'Ibérica, like Spain',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'6',title:"VEGGIE DELIGHT",image:'public/assets/photos/hamburguesas/burger6.png',alt:'Hamburguesa Veggie Delight',
+        {id:'6',title:"VEGGIE DELIGHT",image:'assets/photos/hamburguesas/burger6.png',alt:'Hamburguesa Veggie Delight',
         precio:'12,99',descripcion1:'Veggie for Veggies',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'7',title:"BACON BURGER",image:'public/assets/photos/hamburguesas/burger8.png',alt:'Hamburguesa Bacon Cheesburger',
+        {id:'7',title:"BACON BURGER",image:'assets/photos/hamburguesas/burger8.png',alt:'Hamburguesa Bacon Cheesburger',
         precio:'12,99',descripcion1:'All you need is Bacon',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'8',title:"CHEESBURGER",image:'public/assets/photos/hamburguesas/burger9.png',alt:'Hamburguesa Cheesburger',
+        {id:'8',title:"CHEESBURGER",image:'assets/photos/hamburguesas/burger9.png',alt:'Hamburguesa Cheesburger',
         precio:'12,99',descripcion1:'All you need is Cheese',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'9',title:"TRUFFLE",image:'public/assets/photos/hamburguesas/burger.png',alt:'Hamburguesa Truffle',
+        {id:'9',title:"TRUFFLE",image:'assets/photos/hamburguesas/burger.png',alt:'Hamburguesa Truffle',
         precio:'12,99',descripcion1:'Truffle, indulge in Rich Delights ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
 
-
-        {id:'10',title:"FRIES",image:'public/assets/photos/complementos/patatas.png',alt:'Fries',
+        //COMPLEMENTOS
+        {id:'10',title:"FRIES",image:'assets/photos/complementos/patatas.png',alt:'Fries',
         precio:'12,99',descripcion1:'Fries, always in the table',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'11',title:"BACON FRIES",image:'public/assets/photos/complementos/patatasbacon.png',alt:'Bacon Fries',
+        {id:'11',title:"BACON FRIES",image:'assets/photos/complementos/patatasbacon.png',alt:'Bacon Fries',
         precio:'12,99',descripcion1:'Bacon fries, fries but with delicious bacon',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'12',title:"TRUFFLE FRIES",image:'public/assets/photos/complementos/patatastrufadas.png',alt:'Truffle fries',
+        {id:'12',title:"TRUFFLE FRIES",image:'assets/photos/complementos/patatastrufadas.png',alt:'Truffle fries',
         precio:'12,99',descripcion1:'Truffle fries, fries with truffle what else? ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'13',title:"ALITAS DE POLLO",image:'public/assets/photos/complementos/alitas.png',alt:'Chicken Wings',
+        {id:'13',title:"ALITAS DE POLLO",image:'assets/photos/complementos/alitas.png',alt:'Chicken Wings',
         precio:'12,99',descripcion1:'Chicken Wings, simple and delicious ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
 
-
-        {id:'14',title:"CHOCOSHAKE",image:'public/assets/photos/shakes/choco.png',alt:'Choco Shake',
+        //SHAKES
+        {id:'14',title:"CHOCOSHAKE",image:'assets/photos/shakes/choco.png',alt:'Choco Shake',
         precio:'12,99',descripcion1:'Chocoshake, Choco and Milk, all you need',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'15',title:"MILKSHAKE",image:'public/assets/photos/shakes/leche.png',alt:'Milk Shake',
+        {id:'15',title:"MILKSHAKE",image:'assets/photos/shakes/leche.png',alt:'Milk Shake',
         precio:'12,99',descripcion1:'Milkshake with cookies',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'16',title:"CARAMELSHAKE",image:'public/assets/photos/shakes/lotus.png',alt:'Lotus Shake',
+        {id:'16',title:"CARAMELSHAKE",image:'assets/photos/shakes/lotus.png',alt:'Lotus Shake',
         precio:'12,99',descripcion1:'Milkshake but with Lotus',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'17',title:"OREOSHAKE",image:'public/assets/photos/shakes/oreo.png',alt:'Oreo Shake',
+        {id:'17',title:"OREOSHAKE",image:'assets/photos/shakes/oreo.png',alt:'Oreo Shake',
         precio:'12,99',descripcion1:'Milkshake with oreos ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
 
-        {id:'18',title:"NUTELLA CHEESCAKE",image:'public/assets/photos/postres/tartaquesonutella.png',alt:'Nutella Cheescake',
+        //POSTRES
+        {id:'18',title:"NUTELLA CHEESCAKE",image:'assets/photos/postres/tartaquesonutella.png',alt:'Nutella Cheescake',
         precio:'12,99',descripcion1:'Nutella Cheescake, must try it',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
-        {id:'19',title:"OREO TIRAMISU",image:'public/assets/photos/postres/tiramisu.png',alt:'Oreo Tiramisu',
+        {id:'19',title:"OREO TIRAMISU",image:'assets/photos/postres/tiramisu.png',alt:'Oreo Tiramisu',
         precio:'12,99',descripcion1:'Tiramisu with oreos ',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
         },
         
     ]
 
+    //Devulevo un mapeo de los elementos del array y hago que id sea el parametro que se va a meter en la url y producto (junto con sus atributos) como parametros 
     return productos.map((producto) => {
         return {
             params: {id: producto.id},
@@ -83,9 +89,8 @@ export async function getStaticPaths() {
 const {id} = Astro.params;
 const {producto} = Astro.props;
 ---
-<Layout title={producto.title}>
+<Layout title={producto.title}> <!--Llamo a los atributos de cada componente mediante producto.atributo -->
     <Header/>
-
     <section class="h-[auto] w-[70vw] m-auto flex mt-20 ">
         <div class="w-[50%] h-full p-10 mr-10">
             <h1 class="text-3xl flex justify-center items-center text-center">{producto.title}</h1>
