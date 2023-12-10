@@ -4,13 +4,37 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import React from "react";
+import Button from "../components/Button.astro";
 
 export async function getStaticPaths() {
     const productos = [
-        {id:'1',title:"ORIGINALS",image:'public/assets/photos/hamburguesas/burger1.png', nombre:'Originals',
-    precio:'12,99', ingredientes:[{lechuga:"lechuga",tomate:"tomate",salsa:"salsa",pepinillos:"pepinillos",carne:"carne"}]},
-    {id:'2',title:"HOLA MAMA",image:'public/assets/photos/hamburguesas/burger3.png', nombre:'Originals',
-    precio:'12,99', ingredientes:[{lechuga:"lechuga",tomate:"tomate",salsa:"salsa",pepinillos:"pepinillos",carne:"carne"}]}
+        {id:'1',title:"ORIGINALS",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'2',title:"SUPREME",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'3',title:"BACONCHEESE",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'4',title:"VEGAN TRUFFLE",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'5',title:"CHEESBURGER IBÉRICA",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'6',title:"VEGGIE DELIGHT",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'7',title:"BACON CHEESBURGER",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'8',title:"CHEESBURGER",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
+        {id:'9',title:"TRUFFLE",image:'public/assets/photos/hamburguesas/burger1.png',alt:'Hamburguesa Originals',nombre:'Originals',
+        precio:'12,99',descripcion1:'Originals, made in Astroburger',descripcion2:'Deléitate con nuestra hamburguesa Originals, una obra maestra culinaria que fusiona sabores y texturas de manera única. La jugosidad de nuestra jugosa carne se combina armoniosamente con la frescura de la lechuga y el tomate, mientras que la salsa secreta y los pepinillos aportan un toque inigualable. Originals, más que una hamburguesa, es una sinfonía de gustos que te transportará a un mundo de placer gastronómico. Descubre el arte de la hamburguesa con Originals, solo en Astroburger.' 
+        },
     ]
 
     return productos.map((producto) => {
@@ -24,39 +48,30 @@ const {id} = Astro.params;
 const {producto} = Astro.props;
 ---
 <Layout title="Tu producto">
-    <section class="bg-white h-[100vh] w-[70vw] m-auto flex justify-center ">
-        <div class="bg-red-500 w-[50%] h-[50%] flex justify-center items-center text-justify flex-col">
-            <div class="w-full h-16 bg-blue-500 flex justify-center items-center">
-                <h1 class="text-3xl">{id} {producto.title} </h1>
-            </div>  
-           
-            <h1>{producto.nombre}</h1>
-            <h1>{producto.precio}</h1>
-            <ul>
-                {producto.ingredientes.map((ingrediente) => {
-                    return (
-                        <React.Fragment>
-                            <li>{ingrediente.lechuga.toString()}</li>
-                            <li>{ingrediente.tomate.toString()}</li>
-                            <li>{ingrediente.salsa.toString()}</li>
-                            <li>{ingrediente.pepinillos.toString()}</li>
-                        </React.Fragment>
-                    );
-                })}
-            </ul>
-            <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aut natus dolore commodi, aspernatur dicta. Assumenda 
-                temporibus ipsa quae, id et officiis provident ab aperiam, adipisci quia, molestias hic exercitationem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nemo, veniam ratione quasi at repudiandae asperiores reprehenderit 
-            molestiae praesentium aperiam nam debitis fuga eum a vitae odio dolore consequatur doloribus?</p>
-            <button>AÑADIR</button>
-        </div>
-        <div class="bg-red-300 w-[50%] h-[50%]">
-            <img class="max-w-full max-h-full" src={producto.image} alt="Burger">
-        </div>
-        
-    </section>
+    <Header/>
 
+    <section class="h-[auto] w-[70vw] m-auto flex mt-20 ">
+        <div class="w-[50%] h-full p-10 mr-10">
+            <h1 class="text-3xl flex justify-center items-center text-center">{producto.title}</h1>
+            <h2 class="text-lg flex justify-center items-center mt-4 text-center">{producto.descripcion1}</h2>
+            <div class=" h-auto w-full mt-4">
+                <p class="text-md text-justify">{producto.descripcion2}</p>
+            </div>
+            <p class="text-lg font-bold mt-3" id="precio">Precio: {producto.precio}€</p>
+            <div class="h-auto w-auto bottom-0 mt-2 flex justify-center items-center ">
+               <Button titulo="AÑADIR"/>
+            </div>
+        </div>
+        <div class=" w-[50%] h-full ml-10">
+            <figure class=" h-full w-full flex justify-center items-center align-middle">
+                <img class="max-h-full max-w-full" src={producto.image} alt={producto.alt}/>
+            </figure>
+        </div>
+       
+    </section>
+    <Footer />
 </Layout>
+
 
 <style>
 
@@ -64,9 +79,25 @@ const {producto} = Astro.props;
         font-family: 'merienda';
         src: url('assets/fonts/Merienda-SemiBold.ttf') format('truetype');
     }
-    h1 {
-        font-family: 'merienda',system-ui,'Helvetica Neue', sans-serif;
+
+
+    h1,h2 {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: 0px;
+        text-align: center;}
+    p {
+        font-family: 'merienda', system-ui, sans-serif;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        letter-spacing: 0px;
+        text-align: justify;
     }
-  
-       
+    
+
+    #precio {
+        color:rgb(10, 187, 10);
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
 </style>
