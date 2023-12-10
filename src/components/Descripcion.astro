@@ -1,5 +1,6 @@
 ---
 import Boton from './Boton.astro';
+import Header from './Header.astro';
 
 
 interface Props {
@@ -34,12 +35,7 @@ const {titulo,descripcion,imagen,frase} = Astro.props;
 
 
 <style>
-    @font-face {
-        font-family: 'merienda';
-        src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
-    }
-
-    #seccionTexto h1,h2 {
+#seccionTexto h1,h2 {
         font-family: 'merienda', system-ui, sans-serif;
         color: #fff; /* Texto blanco */
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
