@@ -6,13 +6,18 @@ import CardProducto from "./CardProducto.astro";
     <h2 class="text-3xl flex justify-center items-center">NUESTROS PRODUCTOS </h2>
     <div class="h-auto w-[80vw] mx-auto mt-16 flex justify-around items-center flex-col">
         <ul class="h-full w-3/4 flex justify-evenly items-center">
-            <li class="text-lg" onclick="secciones()">HAMBURGUESAS</li>
-            <li class="text-lg">COMPLEMENTOS</li>
-            <li class="text-lg">SHAKES</li>
-            <li class="text-lg">POSTRES</li>
+            <!-- Menu de opciones -->
+            <a href="#hamburguesas"><li class="text-lg">HAMBURGUESAS</li></a>
+            <a href="#complementos"><li class="text-lg">COMPLEMENTOS</li></a>
+            <a href="#shakes"><li class="text-lg">SHAKES</li></a>
+            <a href="#postres"><li class="text-lg">POSTRES</li></a>
+            
+           
+            
         </ul>
-        <div id="Hamburguesas" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+        <section id="hamburguesas" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
             <a href="/1">
+                <!-- Card Producto para mostrarse al usuario -->
                 <CardProducto 
                     title="ORIGINALS"
                     imgProducto="assets/photos/hamburguesas/burger1.png"
@@ -85,10 +90,10 @@ import CardProducto from "./CardProducto.astro";
                 id="9"
             />
             </a>
-        </div>
+        </section>
         
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+        <section id="complementos" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
             <a href="/10">
                 <CardProducto 
                     title="FRIES"
@@ -121,10 +126,10 @@ import CardProducto from "./CardProducto.astro";
                     id="13"
                 />
             </a>
-        </div>
+        </section>
 
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+        <section id="shakes" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
             <a href="/14">
                 <CardProducto 
                     title="CHOCOSHAKE"
@@ -157,9 +162,9 @@ import CardProducto from "./CardProducto.astro";
                     id="17"
                 />
             </a>
-        </div>
+        </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
+        <section id="postres" class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mx-auto mt-16" style="display:grid;">
             <a href="/18">
                 <CardProducto 
                     title="NUTELLA CHEESCAKE"
@@ -176,7 +181,7 @@ import CardProducto from "./CardProducto.astro";
                     id="19"
                 />
             </a>
-        </div>
+        </section>
     </div>
 </section>
 
@@ -187,6 +192,9 @@ import CardProducto from "./CardProducto.astro";
 
 
 <style>
+    a {
+        scroll-behavior: smooth;
+    }
         #seccionTexto h1,h2 {
         font-family: 'merienda', system-ui, sans-serif;
         color: #fff; /* Texto blanco */
