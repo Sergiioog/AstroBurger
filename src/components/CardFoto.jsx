@@ -1,6 +1,6 @@
 import React from 'react';
-// Componente de react para poner las fotos de fondo
-const CardFoto = (props) => { //Funcion que va a retornar divs con atributos 
+
+const CardFoto = (props) => {
    
     const { titulo, urlFoto,alt } = props;
 
@@ -16,5 +16,5 @@ const CardFoto = (props) => { //Funcion que va a retornar divs con atributos
 }
 
 
-export default CardFoto; //Exporto la funcion
+export default CardFoto;
 
