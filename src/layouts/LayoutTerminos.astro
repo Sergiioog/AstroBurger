@@ -8,10 +8,10 @@ const {title,author,image} = frontmatter;
 <Layout title={title}>
     <Header />
     <section class="bg-slate-50 w-3/4 h-auto m-auto mt-14 flex justify-center items-center flex-col rounded-xl mb-14">
-        <div class=" w-full h-auto flex items-center justify-around p-5">
+        <div class=" w-full h-auto flex items-center justify-around p-5 ">
             <figure>
-                <img  src={image.url} alt={image.alt} />
-              </figure>
+              <img src={image.url} alt={image.alt} />
+          </figure>
             <h1 class="text-4xl"><b>{title}</b></h1>
             <p class="text-2xl font-bold">{author}</p>
         </div>
@@ -46,8 +46,7 @@ const {title,author,image} = frontmatter;
         text-align: center;
     }
     p {
-        font-family: system-ui, sans-serif;
-
+  
         width: 25%;
         display: flex;
         justify-content: center;

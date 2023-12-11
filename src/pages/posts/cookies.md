@@ -4,7 +4,7 @@ title: 'Terminos y Condiciones'
 author: 'Astroburger ©'
 image:
   url: '/assets/photos/logo.png'
-  alt: 'Logo AstroBurgers'
+  alt: 'Logo Astroburger'
 ---
 **POLÍTICA DE COOKIES DE ASTROBURGER**
 
@@ -12,7 +12,7 @@ Las cookies de este sitio web se utilizan para personalizar el contenido y los a
 
 **DE CONFORMIDAD CON LA LEY 34/2002**
 
-De conformidad con la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, mediante la presente Política de Cookies BURGER KING SPAIN S.L.U. te informa de que su sitio web [CAMBIAR ESTO](https://www.burgerking.es) o cualquier otra denominación que pueda tener en el futuro (en adelante, el “Sitio Web”) utiliza cookies, ficheros informáticos que se almacenan en tu ordenador durante tu navegación y que contienen generalmente un número que permite identificar tu ordenador.
+De conformidad con la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, mediante la presente Política de Cookies ASTROBURGER S.L.U. te informa de que su sitio web o cualquier otra denominación que pueda tener en el futuro (en adelante, el “Sitio Web”) utiliza cookies, ficheros informáticos que se almacenan en tu ordenador durante tu navegación y que contienen generalmente un número que permite identificar tu ordenador.
 
 **TIPOS DE COOKIES**
 
@@ -28,7 +28,7 @@ En función de su procedencia:
 
 **FINALIDAD DE LAS COOKIES**
 
-Las finalidades para las que AstroBurger utiliza cookies en el Sitio Web pueden resumirse, generalmente, como sigue:
+Las finalidades para las que Astroburger utiliza cookies en el Sitio Web pueden resumirse, generalmente, como sigue:
 
 1. **Cookies Analíticas:** Se utilizan para recabar estadísticas de actividad del usuario. Entre otros, se analizan el número de usuarios que visitan el Sitio Web, el número de páginas visitadas, así como la actividad de los usuarios en el Sitio Web y su frecuencia de utilización. La información recopilada siempre es anónima de tal forma que no se podrá establecer un vínculo entre ésta y la persona física a quién se refieren.
 
@@ -46,4 +46,4 @@ Si no aceptas las cookies o las rechazas posteriormente, las funcionalidades del
 
 Si deseas más detalles sobre el uso que hacemos de tu información, una copia de la información que nos has facilitado, corregir inexactitudes en la información que mantenemos, o cualquier otro derecho relacionado con la protección de tus datos, puedes ponerte en contacto con nosotros.
 
-Para más información sobre nuestras prácticas de privacidad, consulta nuestra [Política de Privacidad](enlace-a-politica-de-privacidad).
+Para más información sobre nuestras prácticas de privacidad, consulta nuestra política de privacidad.
