@@ -4,13 +4,13 @@ title: 'Terminos y Condiciones'
 author: 'Astroburger ©'
 image:
   url: '/assets/photos/logo.png'
-  alt: 'Logo AstroBurgers'
+  alt: 'Logo Astroburger'
 ---
   
 
-El presente aviso legal regula el uso y aprovechamiento del sitio web [www.astroburger.es](https://astroburg.vercel.app), propiedad de ASTRO BURGER SPAIN SLU (en adelante, ASTRO BURGER).
+El presente aviso legal regula el uso y aprovechamiento del sitio web [www.astroburger.es](https://astroburg.vercel.app), propiedad de ASTRO BURGER SPAIN SLU (en adelante, Astroburger).
 
-La navegación en el sitio web de ASTRO BURGER otorga la condición de usuario, implicando la aceptación plena y sin reservas de todas las condiciones establecidas en este aviso legal. Se advierte que estas condiciones pueden ser modificadas por ASTRO BURGER sin previo aviso, por lo que se recomienda su revisión periódica.
+La navegación en el sitio web de Astroburger otorga la condición de usuario, implicando la aceptación plena y sin reservas de todas las condiciones establecidas en este aviso legal. Se advierte que estas condiciones pueden ser modificadas por Astroburger sin previo aviso, por lo que se recomienda su revisión periódica.
 
 Es responsabilidad del usuario leer cuidadosamente este aviso legal antes de acceder y utilizar la información y servicios ofrecidos en el sitio web.
 
@@ -19,8 +19,8 @@ Es responsabilidad del usuario leer cuidadosamente este aviso legal antes de acc
 
 ASTRO BURGER, de conformidad con la legislación vigente, informa que:
 
-- Nombre: ASTRO BURGER SPAIN SLU
-- Empresa: ASTRO BURGER
+- Nombre: Astroburger SPAIN SLU
+- Empresa: Astroburger
 - CIF: B03093093
 - Sede: Avda. Europa 26, Edif. Ática VII - 28224 Madrid.
 - Inscrita en el Registro Mercantil de Madrid.
@@ -29,36 +29,35 @@ ASTRO BURGER, de conformidad con la legislación vigente, informa que:
 
 Para contactar con nosotros, puedes utilizar los siguientes medios:
 
-- [Canal de Comunicación](https://astroburger-comunicacion.appcore.es/)
 - Dirección postal: Avda. Europa 26, Edif. Ática VII - 28224 Madrid.
 
-Todas las notificaciones y comunicaciones entre los usuarios y ASTRO BURGER se considerarán eficaces cuando se realicen mediante los medios mencionados anteriormente.
+Todas las notificaciones y comunicaciones entre los usuarios y Astroburger se considerarán eficaces cuando se realicen mediante los medios mencionados anteriormente.
 
 **CONDICIONES DE ACCESO Y USO**
 
-El acceso y uso del sitio y sus servicios son gratuitos. No obstante, ASTRO BURGER puede condicionar el uso de algunos servicios a la previa cumplimentación de requisitos.
+El acceso y uso del sitio y sus servicios son gratuitos. No obstante, Astroburger puede condicionar el uso de algunos servicios a la previa cumplimentación de requisitos.
 
-El usuario garantiza la autenticidad y actualidad de los datos proporcionados a ASTRO BURGER y será responsable de cualquier manifestación falsa o inexacta.
+El usuario garantiza la autenticidad y actualidad de los datos proporcionados a Astroburger y será responsable de cualquier manifestación falsa o inexacta.
 
-El usuario se compromete a hacer un uso adecuado del contenido y servicios de ASTRO BURGER, respetando las leyes, la buena fe y el orden público, y será responsable de los daños que pueda ocasionar por un uso inadecuado.
+El usuario se compromete a hacer un uso adecuado del contenido y servicios de Astroburger, respetando las leyes, la buena fe y el orden público, y será responsable de los daños que pueda ocasionar por un uso inadecuado.
 
 **PROPIEDAD INTELECTUAL**
 
-Todo el contenido del sitio web, incluyendo textos, imágenes, gráficos, tecnología, software y diseño gráfico, es propiedad de ASTRO BURGER y no se ceden derechos de explotación al usuario más allá de lo necesario para el correcto uso del sitio.
+Todo el contenido del sitio web, incluyendo textos, imágenes, gráficos, tecnología, software y diseño gráfico, es propiedad de Astroburger y no se ceden derechos de explotación al usuario más allá de lo necesario para el correcto uso del sitio.
 
 Queda prohibido cualquier uso no autorizado, incluyendo la reproducción, distribución o modificación de los contenidos sin autorización.
 
 **EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD**
 
-El contenido del sitio es de carácter general e informativo, sin garantía de integridad, exactitud, validez o actualidad. ASTRO BURGER excluye cualquier responsabilidad por daños y perjuicios derivados del uso del sitio.
+El contenido del sitio es de carácter general e informativo, sin garantía de integridad, exactitud, validez o actualidad. Astroburger excluye cualquier responsabilidad por daños y perjuicios derivados del uso del sitio.
 
 No nos responsabilizamos de la presencia de virus o elementos que puedan afectar los sistemas informáticos del usuario.
 
 **PROCEDIMIENTO EN CASO DE ACTIVIDADES ILEGALES**
 
-En caso de considerar actividades ilegales en el sitio, el usuario o terceros deben notificar a ASTRO BURGER para identificar y especificar las presuntas infracciones.
+En caso de considerar actividades ilegales en el sitio, el usuario o terceros deben notificar a Astroburger para identificar y especificar las presuntas infracciones.
 
-## Condiciones de Uso del Restaurante AstroBurger
+## Condiciones de Uso del Restaurante Astroburger
 
 **1.PEDIDOS**
 
@@ -90,6 +89,6 @@ En caso de considerar actividades ilegales en el sitio, el usuario o terceros de
 
 5.1. **Contenido**: Todo el contenido, incluyendo imágenes y descripciones, en nuestro sitio web y materiales promocionales están protegidos por derechos de autor. No está permitido utilizar, reproducir o distribuir dicho contenido sin autorización.
 
-Al realizar un pedido con ASTRO BURGER, aceptas cumplir con estos términos y condiciones. Nos reservamos el derecho de realizar cambios en estas políticas en cualquier momento.
+Al realizar un pedido con Astroburger, aceptas cumplir con estos términos y condiciones. Nos reservamos el derecho de realizar cambios en estas políticas en cualquier momento.
 
 ¡Gracias por elegirnos y disfrutar de nuestras deliciosas hamburguesas!

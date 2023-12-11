@@ -8,7 +8,7 @@ import Footer from "../components/Footer.astro";
 ---
 <Layout title="Preguntas frecuentes">
     <Header />
-    <h1 class="flex justify-center items-center text-4xl mt-10">PREGUNTAS FRECUENTES</h1>
+    <h1 class="text-xsh-auto items-center w-auto flex justify-center text-2xl sm:text-3xl mt-10">PREGUNTAS FRECUENTES</h1>
     <section class=" w-4/5 m-auto h-auto mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mx-auto">
         <!-- Importo las card de preguntas -->
         <FAQCard title="Alergias" respuesta="Si eres alérgico, por favor ponte en contacto con nuestro equipo. Te proporcionaremos información detallada sobre los ingredientes de nuestros productos." numero="1"/>
@@ -30,7 +30,7 @@ import Footer from "../components/Footer.astro";
         font-family: 'merienda';
         src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
     }
-    h1{
+    h1,h2 {
         font-family: 'merienda', system-ui, sans-serif;
         color: #fff; /* Texto blanco */
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
