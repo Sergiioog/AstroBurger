@@ -8,15 +8,15 @@ interface Props {
 }
 const {logo, titulo, descripcion,alt} = Astro.props;
 ---
-<div id="card" class="bg-white h-[350px] w-[300px] rounded-lg flex items-center flex-col pt-5">
+<div id="card" class="bg-white h-[300px] w-[250px] rounded-lg flex items-center flex-col pt-5 m-auto mb-20">
   <figure class=" w-full h-auto flex justify-center overflow-hidden">
-    <img class="w-32 h-32 object-cover" src={logo} alt={alt}>
+    <img src={logo} alt={alt}>
   </figure>
   <div class="mt-5 w-full h-auto flex justify-center items-center">
-    <h2 class="text-2xl">{titulo}</h2>
+    <h2 class="text-xl">{titulo}</h2>
   </div>
   <div class="mt-2 w-3/4 h-auto flex justify-center items-center text-center">
-    <p class="text-lg">{descripcion}</p>
+    <p class="text-md">{descripcion}</p>
   </div>
 </div>
 
@@ -36,4 +36,5 @@ const {logo, titulo, descripcion,alt} = Astro.props;
     max-height: 100%;
     max-width: 100%;
   }
+  
 </style>

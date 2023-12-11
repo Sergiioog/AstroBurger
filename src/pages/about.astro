@@ -32,11 +32,11 @@ import Footer from "../components/Footer.astro";
         hemos expandido nuestras operaciones, pero nuestra misión sigue siendo la misma: proporcionar una vivencia cósmica en cada bocado. 
         Además, nos enorgullece contribuir a un mundo más sostenible, adoptando prácticas que respetan nuestro entorno y apoyan a nuestras comunidades.
            `},
-        imagen="assets/photos/hamburguesas/burger3.png"/>
+        imagen="assets/photos/hamburguesas/burger5.png"/>
     </section>
-    <section class="h-auto w-full mt-32" id="equipo">
-        <h3 class="text-4xl" >¿POR QUÉ ASTROBURGERS?</h3>
-        <div class=" rounded-xl w-4/5 m-auto mt-10 flex justify-around items-center gap-14 p-5">
+    <section class="h-auto w-full mt-32 m-auto" id="cards">
+        <h3 class="text-xsh-auto w-auto mb-20 flex justify-center text-2xl sm:text-3xl" >¿POR QUÉ ASTROBURGERS?</h3>
+        <div  class=" rounded-xl  w-full h-full grid grid-cols-1 m-auto sm:grid-cols-2 sm:m-0  md:grid-cols-3 xl:grid-cols-4">
             <!-- Importo las cards con sus atributos -->
             <CardAbout
             logo="assets/icons/alarm.svg"
@@ -53,7 +53,7 @@ import Footer from "../components/Footer.astro";
             />
 
             <CardAbout
-            logo="public/assets/icons/casa.svg"
+            logo="assets/icons/casa.svg"
             alt="logo casa"
             titulo="Ambiente Acogedor"
             descripcion="Te invitamos a nuestro restaurante con un ambiente acogedor y familiar para que te sientas como en casa."
@@ -75,16 +75,10 @@ import Footer from "../components/Footer.astro";
         font-family: 'merienda';
         src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
     }
-    h3 {
+    
+    h1,h2,h3 {
         font-family: 'merienda', system-ui, sans-serif;
-        color: #fff; /* Texto blanco */
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-        letter-spacing: -2px;
-        text-align: center;
-    }
-     h1,h2 {
-        font-family: 'merienda', system-ui, sans-serif;
-        color: #fff; /* Texto blanco */
+        color: #fff; 
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
         letter-spacing: -2px;
         text-align: center;
@@ -104,5 +98,25 @@ import Footer from "../components/Footer.astro";
         margin-right: 20px;
 
     }
+    
   
+
+    @media screen and (min-width: 1280px) {
+        #cards {
+            max-width:  70rem;
+        }
+      
+    }
+
+    @media screen and (min-width: 1536px) {
+        #cards {
+            max-width: 75rem;
+        }
+      
+    }
+ 
+
+    
+
+   
 </style>

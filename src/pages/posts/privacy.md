@@ -4,20 +4,20 @@ title: 'Terminos y Condiciones'
 author: 'Astroburger ©'
 image:
   url: '/assets/photos/logo.png'
-  alt: 'Logo AstroBurgers'
+  alt: 'Logo Astroburger'
 ---
 
 **POLÍTICA DE PRIVACIDAD DE ASTROBURGER**
 
-En aplicación de lo dispuesto en el <b>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo</b>, de <i>27 de abril de 2016</i>, y en la <b>Ley Orgánica 3/2018 de 5 de diciembre</b>, de <b>Protección de Datos de Carácter Personal</b> y garantía de los derechos digitales, la presente Política de Privacidad se aplica a la aplicación y/o sitio web de AstroBurgers. La inclusión de esta política es <b>obligatoria</b> cuando se recopilen datos personales del usuario.
+En aplicación de lo dispuesto en el <b>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo</b>, de <i>27 de abril de 2016</i>, y en la <b>Ley Orgánica 3/2018 de 5 de diciembre</b>, de <b>Protección de Datos de Carácter Personal</b> y garantía de los derechos digitales, la presente Política de Privacidad se aplica a la aplicación y/o sitio web de Astroburger. La inclusión de esta política es <b>obligatoria</b> cuando se recopilen datos personales del usuario.
 
 **PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL**
 
-Esta Política de Privacidad informa a los usuarios sobre el <b>tratamiento y protección de sus datos personales recopilados durante el uso de la aplicación y/o sitio web de AstroBurgers</b>. La utilización de estos servicios implica la <b>aceptación de esta Política de Privacidad por parte del usuario</b>.
+Esta Política de Privacidad informa a los usuarios sobre el <b>tratamiento y protección de sus datos personales recopilados durante el uso de la aplicación y/o sitio web de Astroburger</b>. La utilización de estos servicios implica la <b>aceptación de esta Política de Privacidad por parte del usuario</b>.
 
-AstroBurgers implementa medidas para garantizar la seguridad, integridad y confidencialidad de los datos, de acuerdo con la normativa vigente. Los datos son gestionados conforme al <b>Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018</b>, así como la <b>Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico.</b>
+Astroburger implementa medidas para garantizar la seguridad, integridad y confidencialidad de los datos, de acuerdo con la normativa vigente. Los datos son gestionados conforme al <b>Reglamento (UE) 2016/679 y la Ley Orgánica 3/2018</b>, así como la <b>Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico.</b>
 
-Los datos personales recopilados a través de formularios de registro en la aplicación o el envío de correos electrónicos se rigen por esta Política de Privacidad. Estos datos son necesarios para la gestión de algunos servicios proporcionados por AstroBurgers.
+Los datos personales recopilados a través de formularios de registro en la aplicación o el envío de correos electrónicos se rigen por esta Política de Privacidad. Estos datos son necesarios para la gestión de algunos servicios proporcionados por Astroburger.
 
 **DURACIÓN DEL ALMACENAMIENTO DE LOS DATOS**
 ## Duración del Almacenamiento de los Datos
@@ -41,9 +41,9 @@ Nuestros plazos de conservación de datos están basados en necesidades de negoc
 
 Las operaciones, gestiones y procedimientos técnicos, ya sean realizados de forma automatizada como no automatizada, que posibiliten la recogida, almacenamiento, modificación, transferencia y otras acciones sobre datos de carácter personal, tienen la consideración de tratamiento de datos personales.
 
-En AstroBurgers tratamos los datos personales que el usuario nos facilita a través de nuestra app y/o web con el <b>fin de incluirlos en la agenda de contactos, gestionar la relación comercial solicitada y utilizar así esta información como medio de contacto de dicha empresa.</b> Además, el tratamiento de estos datos recabados también implica gestionar el envío de la información que nos sea solicitada y poder responder a las consultas o cuestiones que el usuario remita a través del sitio web, facilitando a su vez a los interesados las ofertas de servicios y/o productos que sean de su interés.
+En Astroburger tratamos los datos personales que el usuario nos facilita a través de nuestra app y/o web con el <b>fin de incluirlos en la agenda de contactos, gestionar la relación comercial solicitada y utilizar así esta información como medio de contacto de dicha empresa.</b> Además, el tratamiento de estos datos recabados también implica gestionar el envío de la información que nos sea solicitada y poder responder a las consultas o cuestiones que el usuario remita a través del sitio web, facilitando a su vez a los interesados las ofertas de servicios y/o productos que sean de su interés.
 
-Los campos de los registros se deben cumplimentar obligatoriamente para que AstroBurgers pueda cumplir con las finalidades mencionadas con anterioridad.
+Los campos de los registros se deben cumplimentar obligatoriamente para que Astroburger pueda cumplir con las finalidades mencionadas con anterioridad.
 
 El usuario puede oponerse al envío de comunicaciones comerciales en cualquier momento mediante el envío de un mensaje de correo electrónico a la dirección indicada supra líneas.
 
@@ -65,11 +65,11 @@ Puede haber finalidades que estén permitidas en virtud de otras bases jurídica
 
 El consentimiento libre, específico, informado e inequívoco, ya que tras la lectura de la presente Política de Privacidad el usuario queda informado y, en caso de estar conforme, puede aceptarla mediante una declaración o una clara acción afirmativa, como el marcado de una casilla que se dispone al efecto.
 
-En el caso de que el interesado no facilite los citados datos o éstos sean erróneos o inexactos, no podremos atender su solicitud, resultando imposible proporcionarle la información solicitada o llevar a cabo la contratación de los servicios. Por tanto, el responsable del tratamiento, AstroBurgers quedará exonerado de toda responsabilidad que pudiera derivarse de la no ejecución del encargo profesional o de las consecuencias que se deriven de estas informaciones inexactas o erróneas.
+En el caso de que el interesado no facilite los citados datos o éstos sean erróneos o inexactos, no podremos atender su solicitud, resultando imposible proporcionarle la información solicitada o llevar a cabo la contratación de los servicios. Por tanto, el responsable del tratamiento, Astroburger quedará exonerado de toda responsabilidad que pudiera derivarse de la no ejecución del encargo profesional o de las consecuencias que se deriven de estas informaciones inexactas o erróneas.
 
 ## Comunicación de Datos
 
-AstroBurgers se apoya en diversos proveedores de servicios para poder ofrecer los productos y servicios mencionados. <b>Aunque en las transmisiones de datos a través de internet o desde una web no es posible garantizar una protección absoluta contra intrusiones,</b> tanto nosotros como nuestros subcontratistas y socios de negocio nos esforzamos al máximo en mantener las medidas de protección física, electrónica y procedimental necesarias para garantizar la protección de su información de acuerdo con las exigencias aplicables en materia de protección de datos.
+Astroburger se apoya en diversos proveedores de servicios para poder ofrecer los productos y servicios mencionados. <b>Aunque en las transmisiones de datos a través de internet o desde una web no es posible garantizar una protección absoluta contra intrusiones,</b> tanto nosotros como nuestros subcontratistas y socios de negocio nos esforzamos al máximo en mantener las medidas de protección física, electrónica y procedimental necesarias para garantizar la protección de su información de acuerdo con las exigencias aplicables en materia de protección de datos.
 
 Todos sus datos se guardan en servidores seguros (o copias físicas seguras) de nuestra propiedad o de nuestros subcontratistas o socios de negocio, y para acceder a ellos y utilizarlos se aplican nuestros criterios y políticas de seguridad (u otras equivalentes de nuestros subcontratistas o socios de negocio).
 
