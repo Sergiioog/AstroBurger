@@ -7,9 +7,11 @@ const {title} = Astro.props;
 
 ---
 
-<section class="w-full h-[80vh] relative flex justify-center items-center">
+<section class="w-full h-[40vh] relative flex justify-center items-center sm:mt-10
+md:mt-16 xl:mt-24 2xl:mt-32">
     <h1 class=" z-10 relative">{title}</h1>
-    <img src="assets/photos/hamburguesas/burger.png" alt="Burger Principal" class="absolute mr-32 z-20 w-[50%] max-h-full">
+    <img src="assets/photos/hamburguesas/burger.png" alt="Burger Principal" class="
+    absolute z-20 w-full h-auto flex justify-center items-center  mb-10">     
 </section>
 
 
@@ -18,19 +20,75 @@ const {title} = Astro.props;
 		font-family: 'merienda';
 		src: url('assets/fonts/Merienda-SemiBold.ttf') format('opentype');
 	}
+    
+    h1 {
+        font-family: 'merienda', system-ui, sans-serif;
+        font-size: 3.3rem;
+        letter-spacing: -4px;
+        color: #fff; /* Texto blanco */
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+        line-height: 1.3;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 10px; /* Esquinas redondeadas para un aspecto más suave */
+        /* Otros estilos adicionales que desees agregar */
+    }
 
- h1 {
-    font-family: 'merienda', system-ui, sans-serif;
-    font-size: 13rem;
-    color: #fff; /* Texto blanco */
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
-    letter-spacing: -12px;
-    line-height: 1.3;
-    text-align: center;
-    margin-bottom: 30px;
-    border-radius: 10px; /* Esquinas redondeadas para un aspecto más suave */
-    /* Otros estilos adicionales que desees agregar */
-}
+    img {
+        max-width: 50%;
+     
+    }
+    @media (min-width: 640px) {
+        h1{
+            font-size: 6rem;
+            letter-spacing: -8px;
+        }
+        img {
+            max-width: 45%;
+        }
+        
+    }
+
+    @media (min-width: 768px) {
+        h1{
+            font-size: 6.5rem;
+            letter-spacing: -10px;
+        }
+        img {
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        h1{
+            font-size: 8.5rem;
+            letter-spacing: -11px;
+        }
+        img {
+            max-width: 45%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        h1{
+            font-size: 9rem;
+            letter-spacing: -12px;
+        }
+        img {
+            max-width: 40%;
+        }
+    }
+
+    @media screen and (min-width: 1536px) {
+        h1{
+            font-size: 12rem;
+            letter-spacing: -20px;
+        }
+        img {
+            max-width: 45%;
+        }
+    }
+
 
 
 </style>
