@@ -11,41 +11,77 @@ interface Props {
 const {titulo,descripcion,imagen,frase} = Astro.props;
 ---
 
-<section class=" h-auto w-full flex justify-center mt-14 items-center">
-    <div id="seccionTexto" class="w-[40%] h-autoflex justify-center flex-col p-5 mt-10">
-        <h1 class=" h-auto w-auto flex justify-center
-        text-4xl">{titulo}</h1>
-        <p class="p-5 text-justify mt-5 mb-3 "> 
+<section class=" m-auto h-auto w-full mt-20 md:flex md:justify-center md:items-center" >
+    <div id="seccionTexto" class="max-w-full max-h-full justify-center flex-col p-5">
+        <h1 class="text-xsh-auto w-auto flex justify-center text-2xl sm:text-3xl    ">{titulo}</h1>
+        <p class="text-md md:text-lg   p-5 text-justify mt-2 mb-2 "> 
            {descripcion}
            <br/>
            {frase}
-        </p>
-
-        
+        </p> 
     </div>
-    <div class="w-[40%] h-[50vh] ml-32">
-        <img src={imagen} alt="imagen burger">
+    <div class="w-full h-full flex justify-center items-center">
+        <img class="max-w-full max-h-full" src={imagen} alt="imagen burger">
     </div>
+    
     
 </section>
 
 
 <style>
-#seccionTexto h1,h2 {
+    section {
+        max-width: 80%;
+    }
+    #seccionTexto h1,h2 {
         font-family: 'merienda', system-ui, sans-serif;
-        color: #fff; /* Texto blanco */
+        color: #fff; 
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
         letter-spacing: -2px;
         text-align: center;
 
     }
 
-    #seccionTexto p, button {
-        color: #fff; /* Texto blanco */
+    p {
+        color: #fff; 
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
     }
-    img {
-        max-height: 100%;
+    @media (min-width: 640px) {
+        
+        img {
+            max-width: 45%;
+        }
+        
+    }
+
+    @media (min-width: 768px) {
+       #seccionTexto {
+        max-width: 50%;
+       }
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        
+        img {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+        img {
+            max-width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 1536px) {
+        
+        img {
+            max-width: 50%;
+        }
+        
     }
    
 </style>
