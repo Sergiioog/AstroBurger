@@ -1,54 +1,33 @@
-# Astro Starter Kit: Basics
+# Astroburger - Página de Hamburguesas con Astro Framework
 
-```sh
-npm create astro@latest -- --template basics
-```
+## Descripción
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Astroburger es una experiencia única en hamburguesas, construida con el potente framework Astro. Este framework no solo proporciona una experiencia de usuario rápida y eficiente, sino que también aprovecha enrutamiento dinámico y componentes para una navegación fluida y modular.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Características Destacadas
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+1. **Diseño Atractivo:** Astroburger presenta un diseño moderno y apetitoso, resaltando la esencia de las hamburguesas mientras aprovecha las capacidades visuales de Astro Framework.
 
-## 🚀 Project Structure
+2. **Optimización de Rendimiento:** Gracias a Astro Framework, la página se carga de manera rápida y eficiente, garantizando una experiencia de usuario ininterrumpida, especialmente con el enrutamiento dinámico.
 
-Inside of your Astro project, you'll see the following folders and files:
+3. **Responsividad:** Astroburger se adapta a diferentes dispositivos y tamaños de pantalla, garantizando una visualización óptima en cualquier lugar y momento.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+4. **Enrutamiento Dinámico:** Utilizando el enrutamiento dinámico, Astroburger ofrece una navegación fluida, permitiendo a los usuarios explorar componentes específicos y secciones de manera eficiente.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+5. **Componentes Modulares:** Los componentes modulares de Astro Framework facilitan la construcción y mantenimiento de la página, permitiendo una actualización y expansión sencilla.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Tecnologías Utilizadas
 
-Any static assets, like images, can be placed in the `public/` directory.
+- **Astro Framework:** Un framework moderno y eficiente para construir aplicaciones web estáticas y dinámicas.
 
-## 🧞 Commands
+- **HTML5 y CSS3:** Utilizando las últimas tecnologías web para garantizar un código limpio y compatible.
 
-All commands are run from the root of the project, from a terminal:
+- **JavaScript:** Para agregar interactividad y dinamismo a la página, especialmente con enrutamiento dinámico.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Términos y Condiciones, Cookies y Privacidad
 
-## 👀 Want to learn more?
+Para garantizar la transparencia y privacidad del usuario, Astroburger utiliza archivos Markdown para describir detalladamente los Términos y Condiciones, la política de Cookies y la Política de Privacidad. Estos documentos proporcionan información esencial sobre el uso de datos, cookies y las condiciones de servicio de Astroburger.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+¡Bienvenido a Astroburger, donde cada hamburguesa es una obra maestra gastronómica! ¡Esperamos verte pronto!
+
+![Captura](https://github.com/Sergiioog/AstroBurger/assets/123545089/b702b95e-a8c0-4715-8e0e-51424809cc9a)
